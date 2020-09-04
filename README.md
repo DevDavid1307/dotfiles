@@ -1,5 +1,4 @@
-# Linux配置 - Manjaro
-
+# i3wm + Manjaro 配置
 
 ## 用到的软件
 - [i3-gaps](https://github.com/Airblader/i3)
