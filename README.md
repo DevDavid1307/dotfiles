@@ -21,3 +21,7 @@ sudo pacman -S i3-gaps polybar dunst neovim rofi alacritty bat picom neofetch tm
 
 yay -S ruby-colorls
 ```
+
+## i3wm
+![](./image/i3wm.png)
+
