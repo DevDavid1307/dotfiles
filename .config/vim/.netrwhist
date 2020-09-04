@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/david/.nvm'
+let g:netrw_dirhist_5='/home/david/.config/enchant'
+let g:netrw_dirhist_4='/home/david/code/david/beemall'
+let g:netrw_dirhist_3='/home/david/code/temp/redis/docs'
+let g:netrw_dirhist_2='/home/david/code/study/gradle/demo/gradle'
+let g:netrw_dirhist_1='/opt/php/php74/lib/php'
