@@ -42,7 +42,6 @@ bindsym $mod+d exec --no-startup-id rofi -show drun #-theme ~/.config/i3/andrea.
 # david.sh 家里的多屏幕方向
 # polybar 顶部条
 ###############################################################
-exec_always albert
 exec_always --no-startup-id feh --bg-scale ~/Picture/bg.jpg
 exec_always picom --config ~/.config/compton/compton.conf -b
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
@@ -265,20 +264,14 @@ client.urgent           $darkred    $darkred   $black      $darkred
 ###############################################################
 # 打开指定软件后，去指定工作空间
 ###############################################################
-assign [class="phpstorm"] $ws1
-assign [class="chrome"] $ws3
-assign [class="navicat premium"] $ws4
-assign [class="netease-cloud-music"] $ws5
-assign [class="wechat"] $ws5
+# assign [class="xx"] $ws1
 
 ###############################################################
 # 自定义快捷键
 ###############################################################
-bindsym $mod+Shift+p exec /home/david/.local/share/JetBrains/Toolbox/apps/PhpStorm/ch-0/201.6668.78/bin/phpstorm.sh
 bindsym $mod+p --release exec /usr/bin/flameshot gui
 
 ###############################################################
 # Window设置
 ###############################################################
-for_window [class="megasync"] border pixel 1
 for_window [instance="yakuake"] floating enable
