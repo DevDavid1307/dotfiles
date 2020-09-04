@@ -1,0 +1,22 @@
+type = internal/memory
+interval = 3
+
+format = <ramp-used> <label>
+format-background = ${colors.memory-bg}
+format-underline = ${colors.memory-underline}
+
+label = %{F#705540}%gb_used%/%gb_total%%{F-}
+label-padding = 2
+
+ramp-used-0 =
+ramp-used-1 =
+ramp-used-2 =
+
+; ramp-used-0 = 
+; ramp-used-0-foreground = ${colors.success}
+;
+; ramp-used-1 = 
+; ramp-used-1-foreground = ${colors.white}
+;
+; ramp-used-2 = 
+; ramp-used-2-foreground = ${colors.urgent}

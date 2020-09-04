@@ -1,0 +1,28 @@
+type = internal/alsa
+
+master-soundcard = default
+speaker-soundcard = default
+headphone-soundcard = default
+
+master-mixer = Master
+
+; mute
+label-muted = sound muted
+format-muted-prefix = " "
+label-muted-foreground = ${colors.urgent}
+label-muted-underline = ${colors.urgent}
+format-muted-foreground = ${colors.urgent}
+
+format-volume = <ramp-volume> <label-volume>
+format-volume-underline = ${colors.function}
+
+ramp-volume-0 = 
+ramp-volume-0-foreground = ${colors.success}
+ramp-volume-1 = 
+ramp-volume-1-foreground = ${colors.notify}
+ramp-volume-2 = 
+ramp-volume-2-foreground = ${colors.urgent}
+
+ramp-headphones-0 = 
+
+ramp-volume-foreground = ${colors.nord7}

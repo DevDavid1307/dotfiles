@@ -1,0 +1,14 @@
+type = internal/date
+interval = 1.0
+
+date  = "%Y-%m-%d %H:%M"
+label = "%date%"
+label-padding = 4
+; label = " %date%"
+
+format-prefix = 
+format-prefix-foreground = ${colors.foreground-alt}
+
+format-underline = ${colors.date-underline}
+format-background = ${colors.date-bg}
+format-foreground = ${colors.date-fg}

@@ -1,0 +1,51 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   https://github.com/polybar/polybar
+;
+;
+;==========================================================
+
+[colors]
+include-file=/home/david/.config/polybar/common/colors
+
+[bar/david]
+include-file=/home/david/.config/polybar/common/bar
+
+[module/i3]
+include-file=/home/david/.config/polybar/modules/i3
+
+;[module/mpd]
+;include-file=/home/david/.config/polybar/modules/mpd
+
+[module/memory]
+include-file=/home/david/.config/polybar/modules/memory
+
+[module/network-short]
+include-file=/home/david/.config/polybar/modules/network-short
+
+[module/date]
+include-file=/home/david/.config/polybar/modules/date
+
+[module/pulseaudio]
+include-file=/home/david/.config/polybar/modules/pulseaudio
+
+[module/alsa]
+include-file=/home/david/.config/polybar/modules/alsa
+
+[module/info-hackspeed]
+include-file=/home/david/.config/polybar/modules/info-hackspeed
+
+[settings]
+include-file=/home/david/.config/polybar/common/setting
+
+[global/wm]
+include-file=/home/david/.config/polybar/common/wm
