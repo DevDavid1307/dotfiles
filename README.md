@@ -25,6 +25,11 @@ sudo pacman -S i3-gaps polybar dunst neovim rofi alacritty bat picom neofetch tm
 yay -S ruby-colorls antigen-git
 ```
 
+## 更改Shell到Zsh
+```shell
+chsh -s /bin/zsh
+```
+
 ## i3wm
 ![](./images/i3wm.png)
 
