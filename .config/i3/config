@@ -49,7 +49,31 @@ exec --no-startup-id nm-applet
 exec --no-startup-id sh ~/.config/i3/screen/david.sh
 exec --no-startup-id fcitx -r
 exec --no-startup-id dunst
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+###############################################################
+# 顶部导航配置
+###############################################################
+# polybar
+# exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# i3blocks
+bar {
+	status_command i3blocks
+	position top
+	tray_output primary
+	tray_padding 5
+	workspace_buttons yes
+	separator_symbol " "
+	strip_workspace_numbers yes
+	font pango:Fira Code Medium 10
+
+	colors {
+		background #323a45
+		# 边框 背景 文本
+		focused_workspace  #8D6E63 #8D6E63 #ffffff
+		inactive_workspace #323a45 #323a45 #ffffff
+	}
+}
 
 ###############################################################
 # 音频快捷键
