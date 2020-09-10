@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<weatherdata>
+  <apiChanges>
+    <!--NB!!! Since we have no other options to contact our users of forecast.xml, we have decided to use this method to get your attention to some major changes with our API-->
+    <!--In the first quarter next year, forecast.xml and forecast_hour_by_hour.xml will be discontinued in favour of a newer JSON API.-->
+    <!--Vi encourage you already now to switch to the new API.-->
+    <!--There are a lot of changes, and you can read all the technical details in our new developer portal https://developer.yr.no-->
+  </apiChanges>
+  <location>
+    <name>Linköping</name>
+    <type>Regional capital</type>
+    <country>Sweden</country>
+    <timezone id="Europe/Stockholm" utcoffsetMinutes="120" />
+    <location altitude="58" latitude="58.41086" longitude="15.62157" geobase="geonames" geobaseid="2694762" />
+  </location>
+  <credit>
+    <!--In order to use the free weather data from yr no, you HAVE to display 
+the following text clearly visible on your web page. The text should be a 
+link to the specified URL.-->
+    <!--Please read more about our conditions and guidelines at http://om.yr.no/verdata/  English explanation at http://om.yr.no/verdata/free-weather-data/-->
+    <link text="Weather forecast from Yr, delivered by the Norwegian Meteorological Institute and the NRK" url="http://www.yr.no/place/Sweden/Östergötland/Linköping/" />
+  </credit>
+  <links>
+    <link id="xmlSource" url="http://www.yr.no/place/Sweden/Östergötland/Linköping/forecast.xml" />
+    <link id="xmlSourceHourByHour" url="http://www.yr.no/place/Sweden/Östergötland/Linköping/forecast_hour_by_hour.xml" />
+    <link id="overview" url="http://www.yr.no/place/Sweden/Östergötland/Linköping/" />
+    <link id="hourByHour" url="http://www.yr.no/place/Sweden/Östergötland/Linköping/hour_by_hour" />
+    <link id="longTermForecast" url="http://www.yr.no/place/Sweden/Östergötland/Linköping/long" />
+  </links>
+  <meta>
+    <lastupdate>2020-09-10T04:54:00</lastupdate>
+    <nextupdate>2020-09-10T06:03:00</nextupdate>
+  </meta>
+  <sun rise="2020-09-10T06:16:55" set="2020-09-10T19:30:31" />
+  <forecast>
+    <tabular>
+      <time from="2020-09-10T06:00:00" to="2020-09-10T12:00:00" period="1">
+        <!-- Valid from 2020-09-10T06:00:00 to 2020-09-10T12:00:00 -->
+        <symbol number="2" numberEx="2" name="Fair" var="02d" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-10T06:00:00 -->
+        <windDirection deg="272.0" code="W" name="West" />
+        <windSpeed mps="4.5" name="Gentle breeze" />
+        <temperature unit="celsius" value="10" />
+        <pressure unit="hPa" value="1006.3" />
+      </time>
+      <time from="2020-09-10T12:00:00" to="2020-09-10T18:00:00" period="2">
+        <!-- Valid from 2020-09-10T12:00:00 to 2020-09-10T18:00:00 -->
+        <symbol number="2" numberEx="2" name="Fair" var="02d" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-10T12:00:00 -->
+        <windDirection deg="293.7" code="WNW" name="West-northwest" />
+        <windSpeed mps="6.5" name="Moderate breeze" />
+        <temperature unit="celsius" value="15" />
+        <pressure unit="hPa" value="1011.4" />
+      </time>
+      <time from="2020-09-10T18:00:00" to="2020-09-11T00:00:00" period="3">
+        <!-- Valid from 2020-09-10T18:00:00 to 2020-09-11T00:00:00 -->
+        <symbol number="2" numberEx="2" name="Fair" var="02n" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-10T18:00:00 -->
+        <windDirection deg="299.1" code="WNW" name="West-northwest" />
+        <windSpeed mps="5.7" name="Moderate breeze" />
+        <temperature unit="celsius" value="15" />
+        <pressure unit="hPa" value="1013.6" />
+      </time>
+      <time from="2020-09-11T00:00:00" to="2020-09-11T06:00:00" period="0">
+        <!-- Valid from 2020-09-11T00:00:00 to 2020-09-11T06:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03n" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-11T00:00:00 -->
+        <windDirection deg="224.8" code="SW" name="Southwest" />
+        <windSpeed mps="2.6" name="Light breeze" />
+        <temperature unit="celsius" value="9" />
+        <pressure unit="hPa" value="1014.6" />
+      </time>
+      <time from="2020-09-11T06:00:00" to="2020-09-11T12:00:00" period="1">
+        <!-- Valid from 2020-09-11T06:00:00 to 2020-09-11T12:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03d" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-11T06:00:00 -->
+        <windDirection deg="219.5" code="SW" name="Southwest" />
+        <windSpeed mps="3.1" name="Light breeze" />
+        <temperature unit="celsius" value="8" />
+        <pressure unit="hPa" value="1013.7" />
+      </time>
+      <time from="2020-09-11T12:00:00" to="2020-09-11T18:00:00" period="2">
+        <!-- Valid from 2020-09-11T12:00:00 to 2020-09-11T18:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-11T12:00:00 -->
+        <windDirection deg="265.2" code="W" name="West" />
+        <windSpeed mps="4.9" name="Gentle breeze" />
+        <temperature unit="celsius" value="16" />
+        <pressure unit="hPa" value="1013.5" />
+      </time>
+      <time from="2020-09-11T18:00:00" to="2020-09-12T00:00:00" period="3">
+        <!-- Valid from 2020-09-11T18:00:00 to 2020-09-12T00:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-11T18:00:00 -->
+        <windDirection deg="220.3" code="SW" name="Southwest" />
+        <windSpeed mps="4.7" name="Gentle breeze" />
+        <temperature unit="celsius" value="16" />
+        <pressure unit="hPa" value="1012.1" />
+      </time>
+      <time from="2020-09-12T00:00:00" to="2020-09-12T06:00:00" period="0">
+        <!-- Valid from 2020-09-12T00:00:00 to 2020-09-12T06:00:00 -->
+        <symbol number="4" numberEx="4" name="Cloudy" var="04" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-12T00:00:00 -->
+        <windDirection deg="208.6" code="SSW" name="South-southwest" />
+        <windSpeed mps="4.4" name="Gentle breeze" />
+        <temperature unit="celsius" value="14" />
+        <pressure unit="hPa" value="1011.7" />
+      </time>
+      <time from="2020-09-12T08:00:00" to="2020-09-12T14:00:00" period="1">
+        <!-- Valid from 2020-09-12T08:00:00 to 2020-09-12T14:00:00 -->
+        <symbol number="9" numberEx="9" name="Rain" var="09" />
+        <precipitation value="1.9" minvalue="0" maxvalue="1.9" />
+        <!-- Valid at 2020-09-12T08:00:00 -->
+        <windDirection deg="203.0" code="SSW" name="South-southwest" />
+        <windSpeed mps="4.1" name="Gentle breeze" />
+        <temperature unit="celsius" value="13" />
+        <pressure unit="hPa" value="1009.6" />
+      </time>
+      <time from="2020-09-12T14:00:00" to="2020-09-12T20:00:00" period="2">
+        <!-- Valid from 2020-09-12T14:00:00 to 2020-09-12T20:00:00 -->
+        <symbol number="9" numberEx="9" name="Rain" var="09" />
+        <precipitation value="2.0" minvalue="0" maxvalue="2.4" />
+        <!-- Valid at 2020-09-12T14:00:00 -->
+        <windDirection deg="206.4" code="SSW" name="South-southwest" />
+        <windSpeed mps="5.1" name="Gentle breeze" />
+        <temperature unit="celsius" value="16" />
+        <pressure unit="hPa" value="1008.1" />
+      </time>
+      <time from="2020-09-12T20:00:00" to="2020-09-13T02:00:00" period="3">
+        <!-- Valid from 2020-09-12T20:00:00 to 2020-09-13T02:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03n" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-12T20:00:00 -->
+        <windDirection deg="240.4" code="WSW" name="West-southwest" />
+        <windSpeed mps="5.2" name="Gentle breeze" />
+        <temperature unit="celsius" value="13" />
+        <pressure unit="hPa" value="1008.5" />
+      </time>
+      <time from="2020-09-13T02:00:00" to="2020-09-13T08:00:00" period="0">
+        <!-- Valid from 2020-09-13T02:00:00 to 2020-09-13T08:00:00 -->
+        <symbol number="2" numberEx="2" name="Fair" var="02n" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-13T02:00:00 -->
+        <windDirection deg="252.5" code="WSW" name="West-southwest" />
+        <windSpeed mps="5.8" name="Moderate breeze" />
+        <temperature unit="celsius" value="11" />
+        <pressure unit="hPa" value="1010.2" />
+      </time>
+      <time from="2020-09-13T08:00:00" to="2020-09-13T14:00:00" period="1">
+        <!-- Valid from 2020-09-13T08:00:00 to 2020-09-13T14:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03d" />
+        <precipitation value="0" minvalue="0" maxvalue="0.8" />
+        <!-- Valid at 2020-09-13T08:00:00 -->
+        <windDirection deg="260.4" code="W" name="West" />
+        <windSpeed mps="5.9" name="Moderate breeze" />
+        <temperature unit="celsius" value="12" />
+        <pressure unit="hPa" value="1011.3" />
+      </time>
+      <time from="2020-09-13T14:00:00" to="2020-09-13T20:00:00" period="2">
+        <!-- Valid from 2020-09-13T14:00:00 to 2020-09-13T20:00:00 -->
+        <symbol number="9" numberEx="9" name="Rain" var="09" />
+        <precipitation value="2.2" minvalue="0" maxvalue="2.2" />
+        <!-- Valid at 2020-09-13T14:00:00 -->
+        <windDirection deg="185.3" code="S" name="South" />
+        <windSpeed mps="5.0" name="Gentle breeze" />
+        <temperature unit="celsius" value="15" />
+        <pressure unit="hPa" value="1012.1" />
+      </time>
+      <time from="2020-09-13T20:00:00" to="2020-09-14T02:00:00" period="3">
+        <!-- Valid from 2020-09-13T20:00:00 to 2020-09-14T02:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03n" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-13T20:00:00 -->
+        <windDirection deg="251.9" code="WSW" name="West-southwest" />
+        <windSpeed mps="5.7" name="Moderate breeze" />
+        <temperature unit="celsius" value="16" />
+        <pressure unit="hPa" value="1010.3" />
+      </time>
+      <time from="2020-09-14T02:00:00" to="2020-09-14T08:00:00" period="0">
+        <!-- Valid from 2020-09-14T02:00:00 to 2020-09-14T08:00:00 -->
+        <symbol number="1" numberEx="1" name="Clear sky" var="01n" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-14T02:00:00 -->
+        <windDirection deg="253.5" code="WSW" name="West-southwest" />
+        <windSpeed mps="3.2" name="Light breeze" />
+        <temperature unit="celsius" value="11" />
+        <pressure unit="hPa" value="1015.2" />
+      </time>
+      <time from="2020-09-14T08:00:00" to="2020-09-14T14:00:00" period="1">
+        <!-- Valid from 2020-09-14T08:00:00 to 2020-09-14T14:00:00 -->
+        <symbol number="1" numberEx="1" name="Clear sky" var="01d" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-14T08:00:00 -->
+        <windDirection deg="274.0" code="W" name="West" />
+        <windSpeed mps="2.8" name="Light breeze" />
+        <temperature unit="celsius" value="11" />
+        <pressure unit="hPa" value="1020.6" />
+      </time>
+      <time from="2020-09-14T14:00:00" to="2020-09-14T20:00:00" period="2">
+        <!-- Valid from 2020-09-14T14:00:00 to 2020-09-14T20:00:00 -->
+        <symbol number="1" numberEx="1" name="Clear sky" var="01d" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-14T14:00:00 -->
+        <windDirection deg="270.6" code="W" name="West" />
+        <windSpeed mps="3.8" name="Gentle breeze" />
+        <temperature unit="celsius" value="19" />
+        <pressure unit="hPa" value="1023.2" />
+      </time>
+      <time from="2020-09-14T20:00:00" to="2020-09-15T02:00:00" period="3">
+        <!-- Valid from 2020-09-14T20:00:00 to 2020-09-15T02:00:00 -->
+        <symbol number="1" numberEx="1" name="Clear sky" var="01n" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-14T20:00:00 -->
+        <windDirection deg="308.7" code="NW" name="Northwest" />
+        <windSpeed mps="1.9" name="Light breeze" />
+        <temperature unit="celsius" value="16" />
+        <pressure unit="hPa" value="1023.0" />
+      </time>
+      <time from="2020-09-15T02:00:00" to="2020-09-15T08:00:00" period="0">
+        <!-- Valid from 2020-09-15T02:00:00 to 2020-09-15T08:00:00 -->
+        <symbol number="1" numberEx="1" name="Clear sky" var="01n" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-15T02:00:00 -->
+        <windDirection deg="233.1" code="SW" name="Southwest" />
+        <windSpeed mps="1.5" name="Light air" />
+        <temperature unit="celsius" value="12" />
+        <pressure unit="hPa" value="1024.2" />
+      </time>
+      <time from="2020-09-15T08:00:00" to="2020-09-15T14:00:00" period="1">
+        <!-- Valid from 2020-09-15T08:00:00 to 2020-09-15T14:00:00 -->
+        <symbol number="1" numberEx="1" name="Clear sky" var="01d" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-15T08:00:00 -->
+        <windDirection deg="185.0" code="S" name="South" />
+        <windSpeed mps="2.1" name="Light breeze" />
+        <temperature unit="celsius" value="14" />
+        <pressure unit="hPa" value="1023.5" />
+      </time>
+      <time from="2020-09-15T14:00:00" to="2020-09-15T20:00:00" period="2">
+        <!-- Valid from 2020-09-15T14:00:00 to 2020-09-15T20:00:00 -->
+        <symbol number="2" numberEx="2" name="Fair" var="02d" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-15T14:00:00 -->
+        <windDirection deg="189.2" code="S" name="South" />
+        <windSpeed mps="2.9" name="Light breeze" />
+        <temperature unit="celsius" value="23" />
+        <pressure unit="hPa" value="1021.8" />
+      </time>
+      <time from="2020-09-15T20:00:00" to="2020-09-16T02:00:00" period="3">
+        <!-- Valid from 2020-09-15T20:00:00 to 2020-09-16T02:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03n" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-15T20:00:00 -->
+        <windDirection deg="202.3" code="SSW" name="South-southwest" />
+        <windSpeed mps="2.8" name="Light breeze" />
+        <temperature unit="celsius" value="18" />
+        <pressure unit="hPa" value="1019.7" />
+      </time>
+      <time from="2020-09-16T02:00:00" to="2020-09-16T08:00:00" period="0">
+        <!-- Valid from 2020-09-16T02:00:00 to 2020-09-16T08:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03n" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-16T02:00:00 -->
+        <windDirection deg="210.1" code="SSW" name="South-southwest" />
+        <windSpeed mps="2.2" name="Light breeze" />
+        <temperature unit="celsius" value="14" />
+        <pressure unit="hPa" value="1019.5" />
+      </time>
+      <time from="2020-09-16T08:00:00" to="2020-09-16T14:00:00" period="1">
+        <!-- Valid from 2020-09-16T08:00:00 to 2020-09-16T14:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03d" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-16T08:00:00 -->
+        <windDirection deg="220.9" code="SW" name="Southwest" />
+        <windSpeed mps="2.5" name="Light breeze" />
+        <temperature unit="celsius" value="15" />
+        <pressure unit="hPa" value="1017.3" />
+      </time>
+      <time from="2020-09-16T14:00:00" to="2020-09-16T20:00:00" period="2">
+        <!-- Valid from 2020-09-16T14:00:00 to 2020-09-16T20:00:00 -->
+        <symbol number="2" numberEx="2" name="Fair" var="02d" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-16T14:00:00 -->
+        <windDirection deg="147.5" code="SSE" name="South-southeast" />
+        <windSpeed mps="3.1" name="Light breeze" />
+        <temperature unit="celsius" value="24" />
+        <pressure unit="hPa" value="1016.4" />
+      </time>
+      <time from="2020-09-16T20:00:00" to="2020-09-17T02:00:00" period="3">
+        <!-- Valid from 2020-09-16T20:00:00 to 2020-09-17T02:00:00 -->
+        <symbol number="1" numberEx="1" name="Clear sky" var="01n" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-16T20:00:00 -->
+        <windDirection deg="184.7" code="S" name="South" />
+        <windSpeed mps="2.3" name="Light breeze" />
+        <temperature unit="celsius" value="19" />
+        <pressure unit="hPa" value="1018.5" />
+      </time>
+      <time from="2020-09-17T02:00:00" to="2020-09-17T08:00:00" period="0">
+        <!-- Valid from 2020-09-17T02:00:00 to 2020-09-17T08:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03n" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-17T02:00:00 -->
+        <windDirection deg="218.7" code="SW" name="Southwest" />
+        <windSpeed mps="1.8" name="Light breeze" />
+        <temperature unit="celsius" value="13" />
+        <pressure unit="hPa" value="1022.0" />
+      </time>
+      <time from="2020-09-17T08:00:00" to="2020-09-17T14:00:00" period="1">
+        <!-- Valid from 2020-09-17T08:00:00 to 2020-09-17T14:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03d" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-17T08:00:00 -->
+        <windDirection deg="135.3" code="SE" name="Southeast" />
+        <windSpeed mps="1.7" name="Light breeze" />
+        <temperature unit="celsius" value="14" />
+        <pressure unit="hPa" value="1021.9" />
+      </time>
+      <time from="2020-09-17T14:00:00" to="2020-09-17T20:00:00" period="2">
+        <!-- Valid from 2020-09-17T14:00:00 to 2020-09-17T20:00:00 -->
+        <symbol number="2" numberEx="2" name="Fair" var="02d" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-17T14:00:00 -->
+        <windDirection deg="81.3" code="E" name="East" />
+        <windSpeed mps="2.0" name="Light breeze" />
+        <temperature unit="celsius" value="19" />
+        <pressure unit="hPa" value="1024.5" />
+      </time>
+      <time from="2020-09-17T20:00:00" to="2020-09-18T02:00:00" period="3">
+        <!-- Valid from 2020-09-17T20:00:00 to 2020-09-18T02:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03n" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-17T20:00:00 -->
+        <windDirection deg="294.5" code="WNW" name="West-northwest" />
+        <windSpeed mps="2.4" name="Light breeze" />
+        <temperature unit="celsius" value="15" />
+        <pressure unit="hPa" value="1023.0" />
+      </time>
+      <time from="2020-09-18T02:00:00" to="2020-09-18T08:00:00" period="0">
+        <!-- Valid from 2020-09-18T02:00:00 to 2020-09-18T08:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03n" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-18T02:00:00 -->
+        <windDirection deg="223.5" code="SW" name="Southwest" />
+        <windSpeed mps="1.8" name="Light breeze" />
+        <temperature unit="celsius" value="12" />
+        <pressure unit="hPa" value="1023.3" />
+      </time>
+      <time from="2020-09-18T08:00:00" to="2020-09-18T14:00:00" period="1">
+        <!-- Valid from 2020-09-18T08:00:00 to 2020-09-18T14:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03d" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-18T08:00:00 -->
+        <windDirection deg="250.7" code="WSW" name="West-southwest" />
+        <windSpeed mps="1.9" name="Light breeze" />
+        <temperature unit="celsius" value="13" />
+        <pressure unit="hPa" value="1022.3" />
+      </time>
+      <time from="2020-09-18T14:00:00" to="2020-09-18T20:00:00" period="2">
+        <!-- Valid from 2020-09-18T14:00:00 to 2020-09-18T20:00:00 -->
+        <symbol number="2" numberEx="2" name="Fair" var="02d" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-18T14:00:00 -->
+        <windDirection deg="168.4" code="SSE" name="South-southeast" />
+        <windSpeed mps="3.4" name="Gentle breeze" />
+        <temperature unit="celsius" value="19" />
+        <pressure unit="hPa" value="1020.8" />
+      </time>
+      <time from="2020-09-18T20:00:00" to="2020-09-19T02:00:00" period="3">
+        <!-- Valid from 2020-09-18T20:00:00 to 2020-09-19T02:00:00 -->
+        <symbol number="2" numberEx="2" name="Fair" var="02n" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-18T20:00:00 -->
+        <windDirection deg="130.4" code="SE" name="Southeast" />
+        <windSpeed mps="2.4" name="Light breeze" />
+        <temperature unit="celsius" value="15" />
+        <pressure unit="hPa" value="1021.9" />
+      </time>
+      <time from="2020-09-19T02:00:00" to="2020-09-19T08:00:00" period="0">
+        <!-- Valid from 2020-09-19T02:00:00 to 2020-09-19T08:00:00 -->
+        <symbol number="3" numberEx="3" name="Partly cloudy" var="03n" />
+        <precipitation value="0" />
+        <!-- Valid at 2020-09-19T02:00:00 -->
+        <windDirection deg="160.4" code="SSE" name="South-southeast" />
+        <windSpeed mps="1.6" name="Light breeze" />
+        <temperature unit="celsius" value="12" />
+        <pressure unit="hPa" value="1021.1" />
+      </time>
+    </tabular>
+  </forecast>
+  <weatherstation stno="0" sttype="" name="" distance="0" lat="0" lon="0" source="">
+    <!--Observasjoner er ikke lengre tilgjengelig i dette datasettet. Observations are no longer availble in this dataset-->
+    <symbol number="0" name="" time="2019-11-14T00:00:00Z" />
+    <temperature unit="" value="0" time="2019-11-14T00:00:00Z" />
+    <windDirection deg="0" code="" name="" time="2019-11-14T00:00:00Z" />
+    <windSpeed mps="0" name="" time="2019-11-14T00:00:00Z" />
+  </weatherstation>
+</weatherdata>

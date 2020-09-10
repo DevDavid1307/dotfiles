@@ -1,0 +1,26 @@
+[WEATHER]
+command=~/.config/i3blocks/weather/weather_info.sh
+interval=300
+color=#FEC925
+signal=2
+
+[ip]
+command=hostname -i | awk '{ print "🌐" $1 }'
+interval=once
+color=#91E78B
+
+[disk]
+command=df -h / | awk '/\//{ printf(" 💾 %4s/%s \n", $4, $2) }'
+interval=2
+color=#C9E3DB
+
+[memory]
+label=🐏
+command=~/.config/i3blocks/memory/memory
+interval=30
+
+[time]
+label=⏰
+command=date +"%Y-%m-%d %H:%M:%S"
+interval=1
+
