@@ -19,7 +19,7 @@
 
 ## 安装
 ```shell
-sudo pacman -S i3-gaps polybar dunst neovim rofi alacritty bat picom neofetch tmux zsh ranger ueberzug i3blocks
+sudo pacman -S i3-gaps polybar dunst neovim rofi alacritty bat picom neofetch tmux zsh ranger ueberzug i3blocks noto-fonts-emoji
 
 yay -S ruby-colorls antigen-git
 ```
