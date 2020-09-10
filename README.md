@@ -29,8 +29,11 @@ yay -S ruby-colorls antigen-git
 chsh -s /bin/zsh
 ```
 
-## i3wm
-![](./images/i3wm.png)
+## i3wm + polybar
+![](./images/i3wm_polybar.png)
+
+## i3wm + i3blocks
+![](./images/i3wm_i3blocks.png)
 
 ## 终端
 ![](./images/terminal.png)
