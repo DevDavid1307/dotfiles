@@ -6,7 +6,7 @@ import xml.etree.ElementTree as ET
 import requests
 
 # Forecast URL.
-YR_URL = "https://www.yr.no/place/Sverige/%C3%96sterg%C3%B6tland/Link%C3%B6ping/forecast.xml"
+YR_URL = "https://www.yr.no/place/China/Chongqing/Chongqing/forecast.xml"
 
 # Good to have data + funky emojicons.
 FORECAST_CACHE_FILE = os.path.dirname(os.path.realpath(__file__)) + "/forecast.xml"
@@ -26,6 +26,21 @@ WEATHER_TYPES = { "Fair"               : ["☀️",   "🌙"], #pylint: disable=
                   "Fog"                : ["🌫️",  "🌫️"], #pylint: disable=C0326
                   "Light snow showers" : ["🌨️",  "🌨️"]} #pylint: disable=C0326
 
+WEATHER_NAME_ZH = {
+    "Fair"               : "晴天",
+    "Partly cloudy"      : "多云转阴",
+    "Clear sky"          : "晴天",
+    "Cloudy"             : "多云",
+    "Light rain"         : "小雨",
+    "Rain"               : "雨天",
+    "Heavy Rain"         : "大雨",
+    "Light snow"         : "小雪",
+    "Snow"               : "雪天",
+    "Heavy snow"         : "大雪",
+    "Foggy"              : "大雾",
+    "Fog"                : "雾天",
+    "Light snow showers" : "阵雪"
+}
 
 def get_xml_root():
     """ Returns a weather XML root, cached from old data if necessary. """
@@ -99,7 +114,7 @@ def main():
     # Print the weather.
     if weather in WEATHER_TYPES:
         # Emoji is avaiable for usage.
-        print(weather + ": " + WEATHER_TYPES.get(weather)[is_night] + " ", end="")
+        print(WEATHER_NAME_ZH.get(weather) + ": " + WEATHER_TYPES.get(weather)[is_night] + " ", end="")
     else:
         # No emoji available, use regular text.
         print(weather + " ", end="")
@@ -108,16 +123,16 @@ def main():
     print(temperature, end="°C ")
 
     # Print the sun rise and set time.
-    if rise_fall_available:
-        print("[" + sun_rise_time + " 🌅 " + sun_set_time + "]", end=" ")
+    # if rise_fall_available:
+    #     print("[" + sun_rise_time + " 🌅 " + sun_set_time + "]", end=" ")
 
     # Print the precipitation (if there is any).
-    if precipitation != "0":
+    # if precipitation != "0":
         # Print with a wet umbrella
-        print("| ☔ " + precipitation + "mm", end=" ")
+        # print("| ☔ " + precipitation + "mm", end=" ")
 
     # Print wind data.
-    print("| 🍃 " + wind_speed + "m/s " + "(" + wind_direction + ")", end="")
+    # print("| 🍃 " + wind_speed + "m/s " + "(" + wind_direction + ")", end="")
 
 # Go gadget, go!
 main()
