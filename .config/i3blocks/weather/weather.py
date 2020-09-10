@@ -42,6 +42,8 @@ WEATHER_NAME_ZH = {
     "Light snow showers" : "阵雪"
 }
 
+PLACE = "重庆"
+
 def get_xml_root():
     """ Returns a weather XML root, cached from old data if necessary. """
     yr_response = 0
@@ -114,13 +116,13 @@ def main():
     # Print the weather.
     if weather in WEATHER_TYPES:
         # Emoji is avaiable for usage.
-        print(WEATHER_NAME_ZH.get(weather) + ": " + WEATHER_TYPES.get(weather)[is_night] + " ", end="")
+        print(PLACE + ": [" + WEATHER_NAME_ZH.get(weather) + " " + WEATHER_TYPES.get(weather)[is_night] + " ", end="")
     else:
         # No emoji available, use regular text.
         print(weather + " ", end="")
 
     # Print the temperature and sun times.
-    print(temperature, end="°C ")
+    print(temperature, end="°C ]")
 
     # Print the sun rise and set time.
     # if rise_fall_available:
