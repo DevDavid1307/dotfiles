@@ -15,37 +15,37 @@
 ;==========================================================
 
 [colors]
-include-file=/home/david/.config/polybar/common/colors
+include-file=~/.config/polybar/common/colors
 
 [bar/david]
-include-file=/home/david/.config/polybar/common/bar
+include-file=~/.config/polybar/common/bar
 
 [module/i3]
-include-file=/home/david/.config/polybar/modules/i3
+include-file=~/.config/polybar/modules/i3
 
 ;[module/mpd]
-;include-file=/home/david/.config/polybar/modules/mpd
+;include-file=~/.config/polybar/modules/mpd
 
 [module/memory]
-include-file=/home/david/.config/polybar/modules/memory
+include-file=~/.config/polybar/modules/memory
 
 [module/network-short]
-include-file=/home/david/.config/polybar/modules/network-short
+include-file=~/.config/polybar/modules/network-short
 
 [module/date]
-include-file=/home/david/.config/polybar/modules/date
+include-file=~/.config/polybar/modules/date
 
 [module/pulseaudio]
-include-file=/home/david/.config/polybar/modules/pulseaudio
+include-file=~/.config/polybar/modules/pulseaudio
 
 [module/alsa]
-include-file=/home/david/.config/polybar/modules/alsa
+include-file=~/.config/polybar/modules/alsa
 
 [module/info-hackspeed]
-include-file=/home/david/.config/polybar/modules/info-hackspeed
+include-file=~/.config/polybar/modules/info-hackspeed
 
 [settings]
-include-file=/home/david/.config/polybar/common/setting
+include-file=~/.config/polybar/common/setting
 
 [global/wm]
-include-file=/home/david/.config/polybar/common/wm
+include-file=~/.config/polybar/common/wm

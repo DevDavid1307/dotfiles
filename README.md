@@ -13,6 +13,8 @@
 - [antigen - zsh插件管理](https://github.com/zsh-users/antigen)
 - [alacritty - 终端](https://github.com/alacritty/alacritty)
 - [bat - 替代cat](https://github.com/sharkdp/bat)
+- [fd - 替代find](https://github.com/sharkdp/fd)
+- [htop - 替代top](https://github.com/hishamhm/htop)
 - [colorls - 替代ls](https://github.com/athityakumar/colorls)
 - [picom - 美化](https://github.com/yshui/picom)
 - [neofetch - 打印系统信息](https://github.com/dylanaraps/neofetch)
@@ -20,7 +22,7 @@
 
 ## 安装
 ```shell
-sudo pacman -S i3-gaps polybar dunst neovim rofi alacritty bat picom neofetch tmux zsh ranger ueberzug i3blocks noto-fonts-emoji flameshot
+sudo pacman -S i3-gaps polybar dunst neovim rofi alacritty bat picom neofetch tmux zsh ranger ueberzug i3blocks noto-fonts-emoji flameshot fd htop
 
 yay -S ruby-colorls antigen-git papirus-dark-kde-git humanity-icon-theme
 ```
