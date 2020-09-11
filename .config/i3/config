@@ -32,7 +32,7 @@ bindsym $mod+Shift+q kill
 ###############################################################
 # 启动器 - rofi
 ###############################################################
-bindsym $mod+d exec --no-startup-id rofi -show drun #-theme ~/.config/i3/andrea.rasi
+bindsym $mod+d exec ~/.config/rofi/launchers/launcher.sh
 
 ###############################################################
 # 开机自启
@@ -42,38 +42,16 @@ bindsym $mod+d exec --no-startup-id rofi -show drun #-theme ~/.config/i3/andrea.
 # david.sh 家里的多屏幕方向
 # polybar 顶部条
 ###############################################################
+# exec_always yakuake
 exec_always --no-startup-id feh --bg-scale ~/Picture/bg.jpg
 exec_always picom --config ~/.config/compton/compton.conf -b
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock-fancy -n
+# exec --no-startup-id i3lock-fancy -ngp
 exec --no-startup-id nm-applet
 exec --no-startup-id sh ~/.config/i3/screen/david.sh
 exec --no-startup-id fcitx -r
 exec --no-startup-id dunst
-
-###############################################################
-# 顶部导航配置
-###############################################################
-# polybar
 # exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
-# i3blocks
-bar {
-	status_command i3blocks
-	position top
-	tray_output primary
-	tray_padding 5
-	workspace_buttons yes
-	separator_symbol " "
-	strip_workspace_numbers yes
-	font pango:Fira Code Medium 10
-
-	colors {
-		background #323a45
-		# 边框 背景 文本
-		focused_workspace  #8D6E63 #8D6E63 #ffffff
-		inactive_workspace #323a45 #323a45 #ffffff
-	}
-}
 
 ###############################################################
 # 音频快捷键
@@ -236,20 +214,25 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-set $mode_power power
-bindsym Mod1+Control+p mode "$mode_power"
-mode "$mode_power" {
-    bindsym l mode "default", exec i3lock-fancy
-    #bindsym l mode "default", exec --no-startup-id /home/david/.config/i3/i3exit lock
-    bindsym e mode "default", exec --no-startup-id /home/david/.config/i3/i3exit logout
-    bindsym s mode "default", exec --no-startup-id /home/david/.config/i3/i3exit suspend
-    bindsym h mode "default", exec --no-startup-id /home/david/.config/i3/i3exit hibernate
-    bindsym r mode "default", exec --no-startup-id /home/david/.config/i3/i3exit reboot
-    bindsym p mode "default", exec --no-startup-id /home/david/.config/i3/i3exit shutdown
+###############################################################
+# 电源选项
+###############################################################
+# set $mode_power power
+# bindsym Mod1+Control+p mode "$mode_power"
+# mode "$mode_power" {
+#     # bindsym l mode "default", exec i3lock-fancy -n
+#     bindsym l mode "default", exec ~/.config/i3lock/lock.sh
+#     bindsym e mode "default", exec --no-startup-id ~/.config/i3/i3exit logout
+#     bindsym s mode "default", exec --no-startup-id ~/.config/i3/i3exit suspend
+#     bindsym h mode "default", exec --no-startup-id ~/.config/i3/i3exit hibernate
+#     bindsym r mode "default", exec --no-startup-id ~/.config/i3/i3exit reboot
+#     bindsym p mode "default", exec --no-startup-id ~/.config/i3/i3exit shutdown
+#
+#     bindsym Return mode "default"
+#     bindsym Escape mode "default"
+# }
 
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
+bindsym Mod1+Control+p exec --no-startup-id ~/.config/rofi/scripts/powermenu.sh
 
 # Set Xresources colors:
 set_from_resource $darkblack	color0  #000000
@@ -286,16 +269,39 @@ client.unfocused        $tertiary   $tertiary  $background $tertiary
 client.urgent           $darkred    $darkred   $black      $darkred
 
 ###############################################################
+# i3bar
+###############################################################
+bar {
+	status_command i3blocks
+	position top
+	tray_output primary
+	tray_padding 5
+	workspace_buttons yes
+	separator_symbol " "
+	strip_workspace_numbers yes
+	font pango:Fira Code Medium 10
+
+	colors {
+		background #323a45
+
+		# 边框 背景 文本
+		focused_workspace  #8D6E63 #EC7875 #212B30
+		inactive_workspace #323a45 #323a45 #ffffff
+	}
+}
+
+###############################################################
 # 打开指定软件后，去指定工作空间
 ###############################################################
-# assign [class="xx"] $ws1
+assign [class="xx"] $ws1
 
 ###############################################################
 # 自定义快捷键
 ###############################################################
-bindsym $mod+p --release exec /usr/bin/flameshot gui
+bindsym $mod+p --release exec /usr/bin/flameshot gui # 截图工具
 
 ###############################################################
 # Window设置
 ###############################################################
-for_window [instance="yakuake"] floating enable
+for_window [class="xx"] border pixel 1
+

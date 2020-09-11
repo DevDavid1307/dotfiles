@@ -16,18 +16,22 @@
 - [colorls - 替代ls](https://github.com/athityakumar/colorls)
 - [picom - 美化](https://github.com/yshui/picom)
 - [neofetch - 打印系统信息](https://github.com/dylanaraps/neofetch)
+- [flameshot - 截图工具](https://github.com/flameshot-org/flameshot)
 
 ## 安装
 ```shell
-sudo pacman -S i3-gaps polybar dunst neovim rofi alacritty bat picom neofetch tmux zsh ranger ueberzug i3blocks noto-fonts-emoji
+sudo pacman -S i3-gaps polybar dunst neovim rofi alacritty bat picom neofetch tmux zsh ranger ueberzug i3blocks noto-fonts-emoji flameshot
 
-yay -S ruby-colorls antigen-git
+yay -S ruby-colorls antigen-git papirus-dark-kde-git humanity-icon-theme
 ```
 
 ## 更改Shell到Zsh
 ```shell
 chsh -s /bin/zsh
 ```
+
+## 快捷键
+- todo 
 
 ## i3wm + polybar
 ![](./images/i3wm_polybar.png)
