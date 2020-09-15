@@ -17,6 +17,7 @@ WEATHER_TYPES = { "Fair"               : ["☀️",   "🌙"], #pylint: disable=
                   "Clear sky"          : ["☀️",   "🌙"], #pylint: disable=C0326
                   "Cloudy"             : ["☁️",   "☁️"],  #pylint: disable=C0326
                   "Light rain"         : ["🌧️",  "🌧️"], #pylint: disable=C0326
+                  "Light rain showers" : ["🌧️",  "🌧️"], #pylint: disable=C0326
                   "Rain"               : ["🌧️",  "🌧️"], #pylint: disable=C0326
                   "Heavy Rain"         : ["🌧️",  "🌧️"], #pylint: disable=C0326
                   "Light snow"         : ["🌨️",  "🌨️"], #pylint: disable=C0326
@@ -32,6 +33,7 @@ WEATHER_NAME_ZH = {
     "Clear sky"          : "晴天",
     "Cloudy"             : "多云",
     "Light rain"         : "小雨",
+    "Light rain showers" : "阵雨",
     "Rain"               : "雨天",
     "Heavy Rain"         : "大雨",
     "Light snow"         : "小雪",
@@ -123,18 +125,6 @@ def main():
 
     # Print the temperature and sun times.
     print(temperature, end="°C ]")
-
-    # Print the sun rise and set time.
-    # if rise_fall_available:
-    #     print("[" + sun_rise_time + " 🌅 " + sun_set_time + "]", end=" ")
-
-    # Print the precipitation (if there is any).
-    # if precipitation != "0":
-        # Print with a wet umbrella
-        # print("| ☔ " + precipitation + "mm", end=" ")
-
-    # Print wind data.
-    # print("| 🍃 " + wind_speed + "m/s " + "(" + wind_direction + ")", end="")
 
 # Go gadget, go!
 main()
