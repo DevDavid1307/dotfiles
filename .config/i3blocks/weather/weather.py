@@ -19,7 +19,7 @@ WEATHER_TYPES = { "Fair"               : ["☀️",   "🌙"], #pylint: disable=
                   "Light rain"         : ["🌧️",  "🌧️"], #pylint: disable=C0326
                   "Light rain showers" : ["🌧️",  "🌧️"], #pylint: disable=C0326
                   "Rain"               : ["🌧️",  "🌧️"], #pylint: disable=C0326
-                  "Heavy Rain"         : ["🌧️",  "🌧️"], #pylint: disable=C0326
+                  "Heavy rain"         : ["🌧️",  "🌧️"], #pylint: disable=C0326
                   "Light snow"         : ["🌨️",  "🌨️"], #pylint: disable=C0326
                   "Snow"               : ["🌨️",  "🌨️"], #pylint: disable=C0326
                   "Heavy snow"         : ["🌨️",  "🌨️"], #pylint: disable=C0326
@@ -35,7 +35,7 @@ WEATHER_NAME_ZH = {
     "Light rain"         : "小雨",
     "Light rain showers" : "阵雨",
     "Rain"               : "雨天",
-    "Heavy Rain"         : "大雨",
+    "Heavy rain"         : "大雨",
     "Light snow"         : "小雪",
     "Snow"               : "雪天",
     "Heavy snow"         : "大雪",
