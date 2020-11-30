@@ -1,7 +1,9 @@
 let mapleader=" "
 
+" 语法高亮
 syntax on
 
+" 主题
 color gruvbox
 
 set nocompatible
@@ -20,6 +22,11 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 
 " 编辑器可以使用鼠标
 set mouse=a
+
+" 缩进配置
+set autoindent
+set tabstop=4
+set expandtab
 
 " 基础设置
 set wrap
@@ -102,16 +109,23 @@ Plug 'airblade/vim-gitgutter'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 " Markdown语法
+Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 
 " rainbow
 Plug 'luochen1990/rainbow'
+
+" 选中的单词加下划线
+Plug 'itchyny/vim-cursorword'
 
 " File navigation
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 Plug 'sheerun/vim-polyglot'
+
+" Go插件
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 call plug#end()
 
