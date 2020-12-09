@@ -83,10 +83,96 @@ let g:strip_whitespace_on_save = 1
 
 let g:rainbow_active = 1
 
+"=================================================
+" 插件管理
+"
 " 插件配置 - https://github.com/junegunn/vim-plug
+"=================================================
 call plug#begin('~/.config/nvim/plugged')
 
+" 主题
+Plug 'morhetz/gruvbox'
+Plug 'rainglow/vim'
+
+" 最下面的导航
+Plug 'vim-airline/vim-airline'
+
+" 括号自动补全
+Plug 'jiangmiao/auto-pairs'
+
+" 括号、引号。。。 成对修改
+Plug 'tpope/vim-surround'
+
+" 清除多余空格
+Plug 'ntpeters/vim-better-whitespace'
+
+" 显示 Git Diff
+Plug 'airblade/vim-gitgutter'
+
+" Markdown实时预览
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+
+" Markdown语法
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+
+" rainbow
+Plug 'luochen1990/rainbow'
+
+" 选中的单词加下划线
+Plug 'itchyny/vim-cursorword'
+
+" 左边文件导航
+" 导航中看到git版本信息
+" 文件图标
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
+
+" 右边方法导航, 需要安装ctags
+Plug 'majutsushi/tagbar'
+
+Plug 'sheerun/vim-polyglot'
+
+" COC自动补全
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+call plug#end()
+
+"=========================================================================插件配置=========================================================================
+
+" 打开右边方法导航
+nmap <F8> :TagbarToggle<CR>
+
+" 打开目录树
+map ff :NERDTreeToggle<CR>
+
+" 清除空格
+map cws :StripWhitespace<CR>
+
+"=================================================
+" vim-go配置
+"=================================================
+let g:go_fmt_command = "goimports" " 格式化将默认的 gofmt 替换
+let g:go_autodetect_gopath = 1
+let g:go_list_type = "quickfix"
+
+let g:go_version_warning = 1
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_generate_tags = 1
+
+let g:godef_split=2
+
+"=================================================
 " COC配置
+"=================================================
 " TextEdit might fail if hidden is not set.
 set hidden
 
@@ -150,8 +236,8 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-" Use K to show documentation in preview window.
-nnoremap <silent> K :call <SID>show_documentation()<CR>
+" Use M to show documentation in preview window.
+nnoremap <silent> M :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
@@ -255,55 +341,3 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
-
-
-" 主题
-Plug 'morhetz/gruvbox'
-Plug 'rainglow/vim'
-
-" 最下面的导航
-Plug 'vim-airline/vim-airline'
-
-" 括号自动补全
-Plug 'jiangmiao/auto-pairs'
-
-" 括号、引号。。。 成对修改
-Plug 'tpope/vim-surround'
-
-" 清除多余空格
-Plug 'ntpeters/vim-better-whitespace'
-
-" 显示 Git Diff
-Plug 'airblade/vim-gitgutter'
-
-" Markdown实时预览
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-
-" Markdown语法
-Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
-
-" rainbow
-Plug 'luochen1990/rainbow'
-
-" 选中的单词加下划线
-Plug 'itchyny/vim-cursorword'
-
-" File navigation
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'ryanoasis/vim-devicons'
-
-Plug 'sheerun/vim-polyglot'
-
-" Go插件 and COC自动补全
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-call plug#end()
-
-" 打开目录树
-map ff :NERDTreeToggle<CR>
-
-" 清除空格
-map cws :StripWhitespace<CR>

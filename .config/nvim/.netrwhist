@@ -1,8 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/david/.cache/samba'
+let g:netrw_dirhist_0='/home/david/.config/rofi/backup'
+let g:netrw_dirhist_9='/home/david'
+let g:netrw_dirhist_8='/opt/deepinwine/apps/Deepin-TIM'
+let g:netrw_dirhist_7='/home/david/code/david/linux_config/.config/alacritty'
 let g:netrw_dirhist_6='/home/david/.nvm'
 let g:netrw_dirhist_5='/home/david/.config/enchant'
 let g:netrw_dirhist_4='/home/david/code/david/beemall'
 let g:netrw_dirhist_3='/home/david/code/temp/redis/docs'
 let g:netrw_dirhist_2='/home/david/code/study/gradle/demo/gradle'
-let g:netrw_dirhist_1='/opt/php/php74/lib/php'
