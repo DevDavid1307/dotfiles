@@ -22,7 +22,7 @@
 
 ## 安装
 ```shell
-sudo pacman -S i3-gaps polybar dunst neovim rofi alacritty bat picom neofetch tmux zsh ranger ueberzug i3blocks noto-fonts-emoji flameshot fd htop
+sudo pacman -S i3-gaps polybar dunst neovim rofi alacritty bat picom neofetch tmux zsh ranger ueberzug i3blocks noto-fonts-emoji flameshot fd htop ctags
 
 yay -S ruby-colorls antigen-git papirus-dark-kde-git humanity-icon-theme
 ```
